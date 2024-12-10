@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Installing MySQL Server :: AWS Application Migration Service</title>
 
     
-    <link href="/css/nucleus.css?1680495163" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680495163" rel="stylesheet">
-    <link href="/css/hybrid.css?1680495163" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680495163" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680495163" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680495163" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680495163" rel="stylesheet">
-    <link href="/css/theme.css?1680495163" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680495163" rel="stylesheet">
+    <link href="/css/nucleus.css?1733825623" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733825623" rel="stylesheet">
+    <link href="/css/hybrid.css?1733825623" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733825623" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733825623" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733825623" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733825623" rel="stylesheet">
+    <link href="/css/theme.css?1733825623" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733825623" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680495163" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733825623" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680495163"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733825623"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680495163"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680495163"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733825623"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733825623"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680495163"></script>
+<script type="text/javascript" src="/js/search.js?1733825623"></script>
 
     
   </div>
@@ -224,7 +224,7 @@
   
     
     <li data-nav-id="/2-preparation/2.4-installmysqlserver/" title="Installing MySQL Server" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -551,7 +551,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>03-04-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -652,12 +652,12 @@
 <li>After successfully logging in with your user/password, you can download MySQL server on EC2.</li>
 </ol>
 <pre tabindex="0"><code>sudo apt-get install mysql-server -y
-</code></pre><p><img src="/images/3/00013.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00013.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Check the version of MySQL that has been installed.</li>
 </ol>
 <pre tabindex="0"><code>mysql --version
-</code></pre><p><img src="/images/3/00014.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00014.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>You will connect to the MySQL server and set a password for the user.</li>
 </ol>
@@ -668,7 +668,7 @@
 FLUSH PRIVILEGES;
 
 exit;
-</code></pre><p><img src="/images/3/00015.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00015.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Perform some interactive commands with MySQL</li>
 </ol>
@@ -679,17 +679,17 @@ exit;
 <pre tabindex="0"><code>CREATE DATABASE awsfcjuser;
 </code></pre><p>Then, use the database:</p>
 <pre tabindex="0"><code>USE awsfcjuser;
-</code></pre><p><img src="/images/3/00017.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00017.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Execute the creation of a table in the AWSFCJUSER database using the CREATE TABLE command.</li>
 </ol>
 <pre tabindex="0"><code>CREATE TABLE `awsfcjuser`.`user` ( `id` INT NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(45) NOT NULL , `last_name` VARCHAR(45) NOT NULL , `email` VARCHAR(45) NOT NULL , `phone` VARCHAR(45) NOT NULL , `comments` TEXT NOT NULL , `status` VARCHAR(10) NOT NULL DEFAULT &#39;active&#39; , PRIMARY KEY (`id`)) ENGINE = InnoDB;
-</code></pre><p><img src="/images/3/00018.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00018.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Verify that the table is created using the DESCRIBE command:</li>
 </ol>
 <pre tabindex="0"><code>DESCRIBE user;
-</code></pre><p><img src="/images/3/00019.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00019.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Insert information into a table using the INSERT INTO statement:</li>
 </ol>
@@ -714,7 +714,7 @@ VALUES
 (NULL, &#39;Ronda&#39;, &#39;Rousey &#39;, &#39;rrousey@ufc.com&#39;, &#39;012345 678910&#39;, &#39;&#39;, &#39;active&#39;),
 (NULL, &#39;Holly&#39;, &#39;Holm &#39;, &#39;hholm@ufc.com&#39;, &#39;012345 678910&#39;, &#39;&#39;, &#39;active&#39;),
 (NULL, &#39;Joanna&#39;, &#39;Jedrzejczyk &#39;, &#39;jjedrzejczyk@ufc.com&#39;, &#39;012345 678910&#39;, &#39;&#39;, &#39;active&#39;);
-</code></pre><p><img src="/images/3/00020.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00020.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Use the SELECT command to display the table:</li>
 </ol>
@@ -1016,19 +1016,19 @@ VALUES
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680495163"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680495163"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680495163"></script>
-    <script src="/js/jquery.sticky.js?1680495163"></script>
-    <script src="/js/featherlight.min.js?1680495163"></script>
-    <script src="/js/highlight.pack.js?1680495163"></script>
+    <script src="/js/clipboard.min.js?1733825623"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733825623"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733825623"></script>
+    <script src="/js/jquery.sticky.js?1733825623"></script>
+    <script src="/js/featherlight.min.js?1733825623"></script>
+    <script src="/js/highlight.pack.js?1733825623"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680495163"></script>
-    <script src="/js/learn.js?1680495163"></script>
-    <script src="/js/hugo-learn.js?1680495163"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733825623"></script>
+    <script src="/js/learn.js?1733825623"></script>
+    <script src="/js/hugo-learn.js?1733825623"></script>
 
-    <link href="/mermaid/mermaid.css?1680495163" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680495163"></script>
+    <link href="/mermaid/mermaid.css?1733825623" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733825623"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

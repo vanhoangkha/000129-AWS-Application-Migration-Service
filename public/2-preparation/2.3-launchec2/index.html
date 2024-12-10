@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Launch the EC2 :: AWS Application Migration Service</title>
 
     
-    <link href="/css/nucleus.css?1680495163" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680495163" rel="stylesheet">
-    <link href="/css/hybrid.css?1680495163" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680495163" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680495163" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680495163" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680495163" rel="stylesheet">
-    <link href="/css/theme.css?1680495163" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680495163" rel="stylesheet">
+    <link href="/css/nucleus.css?1733825623" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733825623" rel="stylesheet">
+    <link href="/css/hybrid.css?1733825623" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733825623" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733825623" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733825623" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733825623" rel="stylesheet">
+    <link href="/css/theme.css?1733825623" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733825623" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680495163" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733825623" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680495163"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733825623"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680495163"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680495163"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733825623"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733825623"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680495163"></script>
+<script type="text/javascript" src="/js/search.js?1733825623"></script>
 
     
   </div>
@@ -196,7 +196,7 @@
   
     
     <li data-nav-id="/2-preparation/2.3-launchec2/" title="Launch the EC2" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -551,7 +551,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>03-04-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -659,27 +659,27 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Configure EC2 by entering the Name and tag. For example, App - Source.</li>
 </ol>
-<p><img src="/images/3/0002.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Choose AMI as Ubuntu Server 20.04 LTS&hellip;</li>
 </ol>
-<p><img src="/images/3/0003.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Select the Instance type and create a Key pair.</li>
 </ol>
-<p><img src="/images/3/0004.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Configure and fill in information about the key pair.</li>
 </ol>
-<p><img src="/images/3/0005.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>After successfully creating the EC2, we will SSH into it using MobaXterm.</li>
 </ol>
-<p><img src="/images/3/0006.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0006.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Add a user to perform login without using a keypair. Use the following command:</li>
 </ol>
@@ -687,12 +687,12 @@
 </code></pre><ul>
 <li>Then choose Enter for the subsequent steps.</li>
 </ul>
-<p><img src="/images/3/0007.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Grant permission to the user:</li>
 </ol>
 <pre tabindex="0"><code>sudo usermod -aG sudo fcjuser
-</code></pre><p><img src="/images/3/0008.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/0008.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Adjust the password login method.</li>
 </ol>
@@ -705,20 +705,20 @@
 <p>Then press Esc and enter :wq!.</p>
 </li>
 </ul>
-<p><img src="/images/3/0009.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/0009.png?featherlight=false&width=90pc"></p>
 <ol start="10">
 <li>Then, restart the SSH server.</li>
 </ol>
 <pre tabindex="0"><code>sudo systemctl restart ssh.service
-</code></pre><p><img src="/images/3/00010.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00010.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>You will have the option to choose to log in optionally.</li>
 </ol>
-<p><img src="/images/3/00011.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/00011.png?featherlight=false&width=90pc"></p>
 <ol start="12">
 <li>After that, you will log in using a user/password and won&rsquo;t need to use a keypair.</li>
 </ol>
-<p><img src="/images/3/00012.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/00012.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1013,19 +1013,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680495163"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680495163"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680495163"></script>
-    <script src="/js/jquery.sticky.js?1680495163"></script>
-    <script src="/js/featherlight.min.js?1680495163"></script>
-    <script src="/js/highlight.pack.js?1680495163"></script>
+    <script src="/js/clipboard.min.js?1733825623"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733825623"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733825623"></script>
+    <script src="/js/jquery.sticky.js?1733825623"></script>
+    <script src="/js/featherlight.min.js?1733825623"></script>
+    <script src="/js/highlight.pack.js?1733825623"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680495163"></script>
-    <script src="/js/learn.js?1680495163"></script>
-    <script src="/js/hugo-learn.js?1680495163"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733825623"></script>
+    <script src="/js/learn.js?1733825623"></script>
+    <script src="/js/hugo-learn.js?1733825623"></script>
 
-    <link href="/mermaid/mermaid.css?1680495163" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680495163"></script>
+    <link href="/mermaid/mermaid.css?1733825623" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733825623"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deploying an application :: AWS Application Migration Service</title>
 
     
-    <link href="/css/nucleus.css?1680495163" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680495163" rel="stylesheet">
-    <link href="/css/hybrid.css?1680495163" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680495163" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680495163" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680495163" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680495163" rel="stylesheet">
-    <link href="/css/theme.css?1680495163" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680495163" rel="stylesheet">
+    <link href="/css/nucleus.css?1733825623" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733825623" rel="stylesheet">
+    <link href="/css/hybrid.css?1733825623" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733825623" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733825623" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733825623" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733825623" rel="stylesheet">
+    <link href="/css/theme.css?1733825623" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733825623" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680495163" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733825623" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680495163"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733825623"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680495163"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680495163"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733825623"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733825623"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680495163"></script>
+<script type="text/javascript" src="/js/search.js?1733825623"></script>
 
     
   </div>
@@ -252,7 +252,7 @@
   
     
     <li data-nav-id="/2-preparation/2.5-deployapp/" title="Deploying an application" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -551,7 +551,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>03-04-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -652,7 +652,7 @@
 <li>Deploy the application. Perform the clone of the application code repository.</li>
 </ol>
 <pre tabindex="0"><code>git clone https://github.com/First-Cloud-Journey/000004-EC2.git
-</code></pre><p><img src="/images/3/00022.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00022.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Go to the directory of lab 000004-EC2:</li>
 </ol>
@@ -672,7 +672,7 @@
 </code></pre><p>Check if Node.js has been installed successfully:</p>
 <pre tabindex="0"><code>node -v
 npm -v
-</code></pre><p><img src="/images/3/00023.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00023.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>NPM stands for Node package manager and is a tool for creating and managing Javascript programming libraries for Node.js. Using npm init to initialize a project will create a sample package.json file.</li>
 </ol>
@@ -686,7 +686,7 @@ npm -v
 <li>mysql</li>
 </ul>
 <pre tabindex="0"><code>npm install express dotenv express-handlebars body-parser mysql
-</code></pre><p><img src="/images/3/00024.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00024.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Create an environment file (.env) and use the vi command to edit it. Configure the database:</li>
 </ol>
@@ -702,12 +702,12 @@ DB_PASS = &#39;123456789@Aws&#39;
 </ul>
 <p>Restart the Express server. Use Nodemon to save time:</p>
 <pre tabindex="0"><code>npm install --save-dev nodemon
-</code></pre><p><img src="/images/3/00025.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00025.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Starting local server</li>
 </ol>
 <pre tabindex="0"><code>npm start
-</code></pre><p><img src="/images/3/00026.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+</code></pre><p><img alt="Application Migration Service" src="/images/3/00026.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>
 <p>Access the EC2 interface</p>
@@ -721,7 +721,7 @@ DB_PASS = &#39;123456789@Aws&#39;
 </ol>
 <pre tabindex="0"><code>&lt;Public IPv4 address&gt;:5000
 </code></pre><p>Example: 3.91.32.39:5000</p>
-<p><img src="/images/3/00027.png?featherlight=false&amp;width=90pc" alt="Application Migration Service"></p>
+<p><img alt="Application Migration Service" src="/images/3/00027.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1016,19 +1016,19 @@ DB_PASS = &#39;123456789@Aws&#39;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680495163"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680495163"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680495163"></script>
-    <script src="/js/jquery.sticky.js?1680495163"></script>
-    <script src="/js/featherlight.min.js?1680495163"></script>
-    <script src="/js/highlight.pack.js?1680495163"></script>
+    <script src="/js/clipboard.min.js?1733825623"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733825623"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733825623"></script>
+    <script src="/js/jquery.sticky.js?1733825623"></script>
+    <script src="/js/featherlight.min.js?1733825623"></script>
+    <script src="/js/highlight.pack.js?1733825623"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680495163"></script>
-    <script src="/js/learn.js?1680495163"></script>
-    <script src="/js/hugo-learn.js?1680495163"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733825623"></script>
+    <script src="/js/learn.js?1733825623"></script>
+    <script src="/js/hugo-learn.js?1733825623"></script>
 
-    <link href="/mermaid/mermaid.css?1680495163" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680495163"></script>
+    <link href="/mermaid/mermaid.css?1733825623" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733825623"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

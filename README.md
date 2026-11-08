@@ -1,4 +1,4 @@
-# 🔄 Application Migration Service
+# Application Migration Service
 
 Migrate applications to AWS with Application Migration Service.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series.
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000129-AWS-Application-Migration-Service/)**
+**[Start the workshop](https://vanhoangkha.github.io/000129-AWS-Application-Migration-Service/)**
 
 ## Prerequisites
 
